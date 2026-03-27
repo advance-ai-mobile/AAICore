@@ -1,0 +1,6 @@
+framework module AAICore {
+  umbrella header "AAICore.h"
+  export *
+
+  module * { export * }
+}
