@@ -1,0 +1,16 @@
+PODS:
+  - AAICore (1.0.3-alpha.1)
+
+DEPENDENCIES:
+  - AAICore (from `../`)
+
+EXTERNAL SOURCES:
+  AAICore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AAICore: 03319fa3ec41cd25d15ffda886392063344a03b4
+
+PODFILE CHECKSUM: 7247f136ff34c6f2b27b740739b8c19d1fc4ab38
+
+COCOAPODS: 1.16.2

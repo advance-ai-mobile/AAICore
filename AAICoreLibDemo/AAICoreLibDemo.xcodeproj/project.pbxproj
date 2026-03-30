@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D04D866A3B37F69A03A2A7FA /* Pods_AAICoreLibDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89761FB44C87B29C043B254F /* Pods_AAICoreLibDemo.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		14F2F49F2F76820A00FFDE6F /* AAICoreLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAICoreLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5718C5EA7CCEFC65734D2DFF /* Pods-AAICoreLibDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAICoreLibDemo.debug.xcconfig"; path = "Target Support Files/Pods-AAICoreLibDemo/Pods-AAICoreLibDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		89761FB44C87B29C043B254F /* Pods_AAICoreLibDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAICoreLibDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8A5565803E8F992ED769C9 /* Pods-AAICoreLibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAICoreLibDemo.release.xcconfig"; path = "Target Support Files/Pods-AAICoreLibDemo/Pods-AAICoreLibDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04D866A3B37F69A03A2A7FA /* Pods_AAICoreLibDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				14F2F4A12F76820A00FFDE6F /* AAICoreLibDemo */,
 				14F2F4A02F76820A00FFDE6F /* Products */,
+				7429D3D5037C748CB4253517 /* Pods */,
+				82DDBF25D174129A40CE1E1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7429D3D5037C748CB4253517 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5718C5EA7CCEFC65734D2DFF /* Pods-AAICoreLibDemo.debug.xcconfig */,
+				CF8A5565803E8F992ED769C9 /* Pods-AAICoreLibDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		82DDBF25D174129A40CE1E1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89761FB44C87B29C043B254F /* Pods_AAICoreLibDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14F2F4B22F76820B00FFDE6F /* Build configuration list for PBXNativeTarget "AAICoreLibDemo" */;
 			buildPhases = (
+				A8C0123DC8E86E93284818AB /* [CP] Check Pods Manifest.lock */,
 				14F2F49B2F76820A00FFDE6F /* Sources */,
 				14F2F49C2F76820A00FFDE6F /* Frameworks */,
 				14F2F49D2F76820A00FFDE6F /* Resources */,
+				9C9A013761E5A14771CE16B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +107,6 @@
 				14F2F4A12F76820A00FFDE6F /* AAICoreLibDemo */,
 			);
 			name = AAICoreLibDemo;
-			packageProductDependencies = (
-			);
 			productName = AAICoreLibDemo;
 			productReference = 14F2F49F2F76820A00FFDE6F /* AAICoreLibDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +155,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C9A013761E5A14771CE16B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AAICoreLibDemo/Pods-AAICoreLibDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AAICoreLibDemo/Pods-AAICoreLibDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AAICoreLibDemo/Pods-AAICoreLibDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C0123DC8E86E93284818AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AAICoreLibDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14F2F49B2F76820A00FFDE6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +210,7 @@
 /* Begin XCBuildConfiguration section */
 		14F2F4B32F76820B00FFDE6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5718C5EA7CCEFC65734D2DFF /* Pods-AAICoreLibDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -172,6 +243,7 @@
 		};
 		14F2F4B42F76820B00FFDE6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF8A5565803E8F992ED769C9 /* Pods-AAICoreLibDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
