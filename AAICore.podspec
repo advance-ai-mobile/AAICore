@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AAICore'
-  s.version          = '1.0.3'
+  s.version          = '1.5.0-alpha.1'
   s.summary          = 'A core utility library'
   s.description      = 'A core utility library that provides common functionalities for other libraries.'
 

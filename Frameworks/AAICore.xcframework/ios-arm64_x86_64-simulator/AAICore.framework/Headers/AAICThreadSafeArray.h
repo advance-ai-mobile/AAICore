@@ -27,10 +27,12 @@ __attribute__((visibility("default")))
 
 - (NSInteger)count;
 - (void)put:(id)object forKey:(NSString *)key;
+- (void)putEntriesFromDict:(NSDictionary *)dict;
 - (void)removeObjectForKeys:(NSArray<NSString *> *)keys;
 - (void)removeObjectForKey:(NSString *)key;
 - (id _Nullable)getObjectForKey:(NSString *)key;
 - (NSArray<NSString *> *)allKeys;
+- (NSDictionary*)copyDict;
 - (void)clear;
 
 @end
